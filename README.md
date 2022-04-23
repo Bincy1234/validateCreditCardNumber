@@ -21,6 +21,7 @@ To build and run
 cd <dir>
 
 go build
+go get <>
 go run main.go
 
 Run unit tests

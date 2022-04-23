@@ -17,7 +17,7 @@ func validateCreditCard(str string) bool {
 
 	trimHyphen := strings.Replace(str, "-", "", -1)
 
-	consecutive_occurence := pcre.MustCompile(`^.*(.)\1{3}`, 0)
+	consecutive_occurence := pcre.MustCompile(`^.*(\d)\1{3}`, 0)
 	consecutive_occurence_check := consecutive_occurence.MatcherString(trimHyphen, 0)
 
 	if (format_check == true) && (!consecutive_occurence_check.Matches()) {
