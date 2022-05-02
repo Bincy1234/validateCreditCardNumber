@@ -1,4 +1,5 @@
-This repository contains a Go program which validates whether given set of a credit card has the following characteristics:
+This repository contains a Go program which validates whether given set of a
+credit cards have the following characteristics:
 
 ► It must start with a 4, 5 or 6.
 ► It must contain exactly 16 digits.
@@ -7,23 +8,49 @@ This repository contains a Go program which validates whether given set of a cre
 ► It must NOT use any other separator like ' ' , '_', etc.
 ► It must NOT have 4 or more consecutive repeated digits.
 
-Installing
-----------------
-brew install go
+## Prerequistes
+
+* Install go
+
+	```
+	brew install go
+
+	```
+
+* Install PCRE library
+
+	```
+	brew install pcre
 
 
-Clone repository
+	```
 
-git clone  
+### Steps to run the program
 
-To build and run
-----------------
-cd <dir>
+ 1) Clone the github repository
 
-go build
-go get <>
-go run main.go
+	 ```
+	 	git clone  
 
-Run unit tests
+	 ```
+
+ 2) Build the Project
+		```
+		go build
+
+		```
+
+ 3) Run
+
+	```
+	go run validateCreditCard.go
+
+	```
+
+### Steps for Unit Testing
 --------------
-go test
+
+	```
+	go test -v
+
+	```
