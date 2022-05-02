@@ -24,18 +24,17 @@ credit cards have the following characteristics:
 
 	```
 
-	---
-	**NOTE**
+---
+**NOTE**
 
-	Golang regex package regexp uses the [re2 engine]
-	(https://github.com/google/re2/wiki/Syntax) which doesn’t support backreferences.
+Golang regex package regexp uses the [re2 engine](https://github.com/google/re2/wiki/Syntax)
+which doesn’t support backreferences.
 
-	So we are using another golang package [go-pcre]
-	(https://github.com/gijsbers/go-pcre) which uses `PCRE`
-	(Perl Compatible Regular Expressions.)
+So we are using another golang package [go-pcre](https://github.com/gijsbers/go-pcre)
+which uses `PCRE`(Perl Compatible Regular Expressions).
 
-	---
-	
+---
+
 ### Steps to run the program
 
  1) Clone the github repository

@@ -64,7 +64,12 @@ func main() {
 
 	length := 0
 
-	fmt.Println("Enter the inputs")
+	inputformat := "Enter the inputs in the following format \n" +
+		"The first line of input contains an integer . \n" +
+		"The next  lines contain credit card numbers. "
+
+	fmt.Println(inputformat)
+
 	fmt.Scanln(&length)
 
 	if validInput(length) {
